@@ -22,7 +22,7 @@ function Navbar() {
     ]
 
     return (
-        <header className="fixed top-0 w-full z-50 border-b bg-gray-500">
+        <header className="fixed top-0 w-full z-50 border-b bg-linear-to-r from-black via-yellow-800 to-yellow-500">
             <nav className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center gap-1">

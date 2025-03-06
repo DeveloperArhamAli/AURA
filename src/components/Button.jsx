@@ -7,6 +7,7 @@ function Button({
     disabled,
     to,
     type = 'button',
+    id,
     ...props
 }) {
     return (
@@ -14,7 +15,7 @@ function Button({
         {to ? (
             <Link to={to} className={`${className}`} {...props}>{children}</Link>
         ) : (
-            <button onClick={onClick} disabled={disabled} className={`border px-3 py-2 rounded cursor-pointer ${className}`} type={type} {...props}>{children}</button>
+            <button onClick={onClick} disabled={disabled} className={`border px-3 py-2 rounded cursor-pointer ${className}`} type={type} {...props} id={id}>{children}</button>
         )}
         </>
     )
