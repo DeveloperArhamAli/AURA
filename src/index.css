@@ -5,6 +5,15 @@
     src: url("./assets/font/Poppins/Poppins-Regular.ttf");
 }
 
+@font-face {
+    font-family: Rafaella;
+    src: url("./assets/font/rafaella/Rafaella.ttf");
+}
+
 * {
     font-family: "Poppins";
+}
+
+.logo {
+    font-family: "Rafaella";
 }
