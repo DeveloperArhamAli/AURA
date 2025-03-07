@@ -56,8 +56,8 @@ return (
                         }
                     })}/>
                     <div className="flex flex-col">
-                        <label htmlFor="message" className="mb-2">Message:</label>
-                        <textarea name="message" placeholder="Enter Your Message" className="border border-black rounded-md px-3 py-2" rows={6} {...register("message", {
+                        <label htmlFor="message" className="mb-2 text-black">Message:</label>
+                        <textarea name="message" placeholder="Enter Your Message" className="border border-black rounded-md px-3 py-2 text-black" rows={6} {...register("message", {
                         required: true,
                     })}></textarea>
                     </div>

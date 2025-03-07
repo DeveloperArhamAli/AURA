@@ -2,7 +2,7 @@ import ServiceCard from "../components/ServiceCard"
 
 function ServicesPage() {
     return (
-        <div className="min-h-screen mt-20">
+        <div className="min-h-screen pt-20">
             <h1 className="text-3xl text-center">Our Services</h1>
             <p className="text-center mt-1 text-xl">We provide multiple services.</p>
             <div className="mt-6">

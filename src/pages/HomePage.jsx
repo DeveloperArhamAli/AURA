@@ -11,7 +11,7 @@ function HomePage() {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae et, ipsa quas numquam consequuntur dignissimos nemo id autem vero eos tempora accusamus fuga quo sit tempore ipsum porro dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt amet dignissimos tenetur ipsa est, numquam veniam voluptate consequuntur tempora, itaque inventore vero, quam rerum non veritatis eligendi labore sapiente.</p>
 
                     <div className="mt-3">
-                        <Button children="Contact Us" to="/contact" className="border px-3 py-2 rounded hover:bg-cyan-500 hover:text-white transition duration-300" />
+                        <Button children="Contact Us" to="/contact" className="border px-3 py-2 rounded" />
                     </div>
 
                 </div>
