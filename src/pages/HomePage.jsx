@@ -8,11 +8,8 @@ function HomePage() {
             <div className="flex w-full">
                 <div className="flex flex-col mt-52 w-2/3 px-20 gap-5">
                     <h1 className="text-5xl">AURA ENTERPRISES</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae et, ipsa quas numquam consequuntur dignissimos nemo id autem vero eos tempora accusamus fuga quo sit tempore ipsum porro dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt amet dignissimos tenetur ipsa est, numquam veniam voluptate consequuntur tempora, itaque inventore vero, quam rerum non veritatis eligendi labore sapiente.</p>
-
-                    <div className="mt-3">
-                        <Button children="Contact Us" to="/contact" className="border px-3 py-2 rounded" />
-                    </div>
+                    <p>At AURA ENTERPRISES, we specialize in crafting cutting-edge digital solutions that help businesses thrive in the online world. From stunning websites to captivating visuals, we bring creativity and technical expertise together to create a lasting impact. Our team is dedicated to delivering high-quality services tailored to your unique needs, ensuring that your brand stands out in today’s competitive landscape.</p>
+                    <p>At AURA ENTERPRISES, we are committed to delivering excellence in every service we provide. Let’s collaborate and elevate your brand to new heights! 🚀</p>
 
                 </div>
                 <div className="w-1/3">

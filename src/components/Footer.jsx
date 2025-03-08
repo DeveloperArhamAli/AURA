@@ -84,7 +84,7 @@ function Footer() {
             </div>
             <div>
                 <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row border-t">
-                <p className="text-sm text-center sm:text-left">Copyright © {new Date().getFullYear()} by AURA ENTERPRICES | All Rights Reserved</p>
+                <p className="text-sm text-center sm:text-left">Copyright © {new Date().getFullYear()} by AURA ENTERPRISES | All Rights Reserved</p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                     <a className="hover:text-blue-500 transition duration-300 cursor-pointer">
                     <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
