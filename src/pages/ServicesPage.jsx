@@ -16,7 +16,6 @@ function ServicesPage() {
 
                 <ServiceCard heading="Video Editing: Bringing Stories to Life" description="Video content is one of the most powerful tools in digital marketing. Our skilled editors transform raw footage into compelling videos with seamless transitions, effects, and engaging storytelling. From promotional videos to social media content, we craft high-quality visuals that leave a lasting impact on your audience." bgColor="bg-amber-600/25" />
 
-
             </div>
         </div>
     )
