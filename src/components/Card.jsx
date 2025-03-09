@@ -4,7 +4,7 @@ function Card({
 }) {
     return (
         <div className="border p-8 flex flex-col items-center rounded-lg ">
-            <img src={image} alt="" className="w-1/2" />
+            <img src={image} alt="" className="w-1/2 aspect-square bg-contain" />
             <h1 className="mt-3 text-xl">{name}</h1>
         </div>
     )

@@ -1,7 +1,7 @@
 function ServiceCard({
     heading,
     description,
-    image,
+    image = "https://images.pexels.com/photos/28643822/pexels-photo-28643822/free-photo-of-urban-architectural-scene-with-dramatic-shadows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     bgColor,
     className,
     imagePosition = "left",
@@ -11,7 +11,7 @@ function ServiceCard({
         {imagePosition === "left" ? (
             <div className={`flex gap-7 p-8 mb-5 ${bgColor} ${className}`}>
                 <div className="w-1/4">
-                    <img src="https://images.pexels.com/photos/28643822/pexels-photo-28643822/free-photo-of-urban-architectural-scene-with-dramatic-shadows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" className="w-full" alt="" />
+                    <img src={image} className="w-full" alt="" />
                 </div>
                 <div className="flex flex-col w-3/3 justify-center">
                     <h1 className="text-4xl">{heading}</h1>
