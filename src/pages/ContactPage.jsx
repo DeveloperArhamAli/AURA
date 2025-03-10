@@ -275,7 +275,7 @@ export default function ContactPage() {
 
           <div className="rounded-xl overflow-hidden h-[400px] relative">
             <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d598.0469982894678!2d67.11482530381893!3d24.90124132877002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33922488f3725%3A0x3bfde63eb356ebc0!2sMillennium%20Mall!5e0!3m2!1sen!2s!4v1741609792565!5m2!1sen!2s" className="w-full h-full" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d598.0469982894678!2d67.11482530381893!3d24.90124132877002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33922488f3725%3A0x3bfde63eb356ebc0!2sMillennium%20Mall!5e0!3m2!1sen!2s!4v1741609792565!5m2!1sen!2s" className="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
