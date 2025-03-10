@@ -1,4 +1,8 @@
 import { CheckCircle, Globe, Users, Award, Building, Clock } from 'lucide-react'
+import AgencyImage from "../assets/agency.jpg"
+import Person1 from "../assets/person1.jpeg"
+import Person2 from "../assets/peson2.jpeg"
+import Person3 from "../assets/person3.jpeg"
 
 export default function AboutPage() {
   return (
@@ -6,13 +10,13 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative bg-black py-20">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
-        <div className="container relative z-10">
+        <div className="container relative z-10 px-8">
           <div className="max-w-3xl">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
               About Us
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-              We Are <span className="text-gold">Nexus</span>
+              We Are <span className="text-gold">AURA ENTERPRISES</span>
             </h1>
             <p className="text-xl text-white/70 mb-8">
               A team of digital experts passionate about creating exceptional online experiences that drive business growth.
@@ -22,7 +26,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -33,7 +37,7 @@ export default function AboutPage() {
                 From Humble Beginnings to Digital Excellence
               </h2>
               <p className="text-black/70 mb-6">
-                Founded in 2010, Nexus began as a small web design studio with a vision to help businesses establish a meaningful online presence. Over the years, we've evolved into a full-service digital agency, expanding our expertise across various digital domains.
+                Founded in 2010, AURA ENTERPRISES began as a small web design studio with a vision to help businesses establish a meaningful online presence. Over the years, we've evolved into a full-service digital agency, expanding our expertise across various digital domains.
               </p>
               <p className="text-black/70 mb-6">
                 Our journey has been defined by continuous learning, innovation, and a relentless pursuit of excellence. Today, we're proud to be a trusted digital partner for businesses of all sizes, from startups to established enterprises.
@@ -47,7 +51,7 @@ export default function AboutPage() {
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gold/20 rounded-lg"></div>
               <div className="relative z-10 rounded-lg overflow-hidden border-2 border-gold/30">
                 <img 
-                  src="/placeholder.svg?height=600&width=800" 
+                  src={AgencyImage}
                   alt="Our agency office" 
                   className="w-full h-auto"
                 />
@@ -58,7 +62,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -68,7 +72,7 @@ export default function AboutPage() {
               Principles That Guide Our Work
             </h2>
             <p className="max-w-3xl mx-auto text-white/70">
-              At Nexus, our values are the foundation of everything we do. They shape our culture, guide our decisions, and define how we work with our clients and each other.
+              At AURA ENTERPRISES, our values are the foundation of everything we do. They shape our culture, guide our decisions, and define how we work with our clients and each other.
             </p>
           </div>
           
@@ -137,14 +141,14 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
               Our Team
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Meet the Experts Behind Nexus
+              Meet the Experts Behind AURA ENTERPRISES
             </h2>
             <p className="max-w-3xl mx-auto text-black/70">
               Our talented team of digital professionals brings diverse skills and experiences to deliver exceptional results for our clients.
@@ -156,7 +160,7 @@ export default function AboutPage() {
             <div className="group">
               <div className="relative overflow-hidden rounded-xl mb-4">
                 <img 
-                  src="/placeholder.svg?height=400&width=400" 
+                  src={Person1}
                   alt="Team Member" 
                   className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -185,7 +189,7 @@ export default function AboutPage() {
             <div className="group">
               <div className="relative overflow-hidden rounded-xl mb-4">
                 <img 
-                  src="/placeholder.svg?height=400&width=400" 
+                  src={Person2}
                   alt="Team Member" 
                   className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -214,7 +218,7 @@ export default function AboutPage() {
             <div className="group">
               <div className="relative overflow-hidden rounded-xl mb-4">
                 <img 
-                  src="/placeholder.svg?height=400&width=400" 
+                  src={Person3}
                   alt="Team Member" 
                   className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -243,7 +247,7 @@ export default function AboutPage() {
             <div className="group">
               <div className="relative overflow-hidden rounded-xl mb-4">
                 <img 
-                  src="/placeholder.svg?height=400&width=400" 
+                  src={Person1} 
                   alt="Team Member" 
                   className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -272,7 +276,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black px-8">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
@@ -299,7 +303,7 @@ export default function AboutPage() {
       </section>
 
       {/* Clients Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -313,7 +317,7 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+          {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {[...Array(6)].map((_, i) => (
               <div key={i} className="flex items-center justify-center p-4">
                 <img 
@@ -323,7 +327,7 @@ export default function AboutPage() {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

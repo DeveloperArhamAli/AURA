@@ -1,47 +1,3 @@
-// import ContactForm from "../components/ContactForm"
-// import reactSvg from "../assets/react.svg"
-
-// function ContactPage() {
-//     return (
-//         <div className="py-32 flex flex-col items-center">
-//             <h1 className="text-3xl text-center font-bold mb-3">Get In Touch</h1>
-//             <ContactForm />
-//             <p className="mt-8">or</p>
-//             <div className="flex mt-8 gap-5">
-//                 <div className="flex flex-col justify-center gap-2 border-2 border-black rounded-md px-4 py-2">
-//                     <img src={reactSvg} alt="" />
-//                     <h1>Instagram</h1>
-//                 </div>
-//                 <div className="flex flex-col justify-center gap-2 border-2 border-black rounded-md px-4 py-2">
-//                     <img src={reactSvg} alt="" />
-//                     <h1>Instagram</h1>
-//                 </div>
-//                 <div className="flex flex-col justify-center gap-2 border-2 border-black rounded-md px-4 py-2">
-//                     <img src={reactSvg} alt="" />
-//                     <h1>Instagram</h1>
-//                 </div>
-//                 <div className="flex flex-col justify-center gap-2 border-2 border-black rounded-md px-4 py-2">
-//                     <img src={reactSvg} alt="" />
-//                     <h1>Instagram</h1>
-//                 </div>
-//                 <div className="flex flex-col justify-center gap-2 border-2 border-black rounded-md px-4 py-2">
-//                     <img src={reactSvg} alt="" />
-//                     <h1>Instagram</h1>
-//                 </div>
-//                 <div className="flex flex-col justify-center gap-2 border-2 border-black rounded-md px-4 py-2">
-//                     <img src={reactSvg} alt="" />
-//                     <h1>Instagram</h1>
-//                 </div>
-//                 <div className="flex flex-col justify-center gap-2 border-2 border-black rounded-md px-4 py-2">
-//                     <img src={reactSvg} alt="" />
-//                     <h1>Instagram</h1>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-// export default ContactPage
-
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
@@ -50,7 +6,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative bg-black py-20">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
-        <div className="container relative z-10">
+        <div className="container relative z-10 px-8">
           <div className="max-w-3xl">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
               Contact Us
@@ -66,7 +22,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
@@ -95,7 +51,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-black">Email</h3>
-                      <p className="text-black/70">info@nexusagency.com</p>
+                      <p className="text-black/70">info@AURA ENTERPRISESagency.com</p>
                     </div>
                   </div>
 
@@ -308,7 +264,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black px-8">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Our Location</h2>
@@ -319,13 +275,13 @@ export default function ContactPage() {
 
           <div className="rounded-xl overflow-hidden h-[400px] relative">
             <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
-            <img src="/placeholder.svg?height=800&width=1600" alt="Map" className="w-full h-full object-cover" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d598.0469982894678!2d67.11482530381893!3d24.90124132877002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33922488f3725%3A0x3bfde63eb356ebc0!2sMillennium%20Mall!5e0!3m2!1sen!2s!4v1741609792565!5m2!1sen!2s" className="w-full h-full" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">

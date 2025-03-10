@@ -1,8 +1,11 @@
 import { ChevronRight, Globe, Code, BarChart, Megaphone, CheckCircle, Star } from "lucide-react"
-import { Link } from "react-router-dom"
 import Button from "../components/Button"
 import Card from "../components/Card"
 import Testimonial from "../components/Testimonial"
+import OfficeImage from "../assets/office.jpg"
+import Person1 from "../assets/person1.jpeg"
+import Person2 from "../assets/peson2.jpeg"
+import Person3 from "../assets/person3.jpeg"
 
 function HomePage() {
   return (
@@ -24,8 +27,8 @@ function HomePage() {
               development to digital marketing, we've got you covered.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-gold hover:bg-gold/90 text-black px-8 py-6" children="Explore Services" />
-              <Button className="border-gold text-gold hover:bg-gold/10 px-8 py-6" children="Contact Us" />
+              <Button to="/services" className="bg-gold hover:bg-gold/90 text-black px-8 py-6" children="Explore Services" />
+              <Button to="/contact" className="border-gold text-gold hover:bg-gold/10 px-8 py-6" children="Contact Us" />
             </div>
           </div>
         </section>
@@ -115,7 +118,7 @@ function HomePage() {
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gold/20 rounded-lg"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden border-2 border-gold/30">
                   <img
-                    src="/placeholder.svg?height=600&width=800"
+                    src={OfficeImage}
                     alt="Our team at work"
                     width={800}
                     height={600}
@@ -139,11 +142,11 @@ function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-              <Testimonial stars={5} description="Working with AURA ENTERPRISES has been a game-changer for our business. Their web development team created a stunning website that perfectly represents our brand and has significantly increased our online conversions."name="Sarah Johnson" designation="CEO, TechInnovate" />
+              <Testimonial stars={5} description="Working with AURA ENTERPRISES has been a game-changer for our business. Their web development team created a stunning website that perfectly represents our brand and has significantly increased our online conversions."name="Sarah Johnson" designation="CEO, TechInnovate" image={Person1} />
 
-              <Testimonial stars={5} description="The digital marketing strategy developed by AURA ENTERPRISES helped us reach our target audience effectively. We've seen a 200% increase in organic traffic and a significant boost in lead generation." name="Michael Chen" designation="Marketing Director, GrowthHub" />
+              <Testimonial stars={5} description="The digital marketing strategy developed by AURA ENTERPRISES helped us reach our target audience effectively. We've seen a 200% increase in organic traffic and a significant boost in lead generation." name="Michael Chen" designation="Marketing Director, GrowthHub" image={Person2} />
               
-              <Testimonial stars={5} description="AURA ENTERPRISES delivered an exceptional mobile app that exceeded our expectations. Their attention to detail and commitment to quality is impressive. We highly recommend their services." name="Emily Rodriguez" designation="Product Manager, AppSolutions" />
+              <Testimonial stars={5} description="AURA ENTERPRISES delivered an exceptional mobile app that exceeded our expectations. Their attention to detail and commitment to quality is impressive. We highly recommend their services." name="Emily Rodriguez" designation="Product Manager, AppSolutions" image={Person3} />
 
             </div>
           </div>
