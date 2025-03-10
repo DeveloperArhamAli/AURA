@@ -7,7 +7,6 @@ import HomePage from './pages/HomePage.jsx'
 import ServicesPage from './pages/ServicesPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
-import Page from "./pages/Page.jsx"
 
 const router = createBrowserRouter([
   {
@@ -30,10 +29,6 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />
       },
-      {
-        path: "/page",
-        element: <Page />
-      }
     ]
   }
 ])

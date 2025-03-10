@@ -1,117 +1,183 @@
-import image from "../assets/react.svg"
+import { Link } from "react-router-dom"
+import { Facebook, Globe, Instagram, Linkedin, Twitter } from "lucide-react"
 
 function Footer() {
+  const services = [
+    {
+      name: "Web Development",
+      slug: "/services#web-development",
+    },
+    {
+      name: "Graphic Designing",
+      slug: "/services#graphic-designing",
+    },
+    {
+      name: "SEO",
+      slug: "/services#SEO",
+    },
+    {
+      name: "Photography",
+      slug: "/services#photography",
+    },
+    {
+      name: "Video Editing",
+      slug: "/services#video-editing",
+    }
+  ]
+
+  const company = [
+    {
+      name: "About Us",
+      slug: "/about",
+    },
+    {
+      name: "Services",
+      slug: "/services",
+    },
+    {
+      name: "Contact",
+      slug: "/contact",
+    }
+  ]
+
     return (
-        <footer className="text-white body-font border-t">
-            <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                    <img src={image} alt="" />
-                    <span className="ml-3 text-xl text-white">AURA ENTERPRISES</span>
-                </a>
-                <p className="mt-2 text-sm text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav className="list-none mb-10">
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">First Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Second Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Third Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav className="list-none mb-10">
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">First Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Second Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Third Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav className="list-none mb-10">
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">First Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Second Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Third Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav className="list-none mb-10">
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">First Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Second Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Third Link</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer hover:underline">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                </div>
+      <footer className="bg-black border-t px-8 border-gold/20 py-12">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <Globe className="h-6 w-6 text-gold" />
+              <span className="text-xl font-bold text-white">AURA ENTERPRISES</span>
             </div>
-            <div>
-                <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row border-t">
-                <p className="text-sm text-center sm:text-left">Copyright © {new Date().getFullYear()} by AURA ENTERPRISES | All Rights Reserved</p>
-                <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                    <a className="hover:text-blue-500 transition duration-300 cursor-pointer">
-                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                    </svg>
-                    </a>
-                    <a className="ml-3 hover:text-blue-500 transition duration-300 cursor-pointer">
-                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                    </svg>
-                    </a>
-                    <a className="ml-3 hover:text-pink-500 transition duration-300 cursor-pointer">
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                    </svg>
-                    </a>
-                    <a className="ml-3 hover:text-blue-500 transition duration-300 cursor-pointer">
-                    <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                    </svg>
-                    </a>
+            <p className="text-white/70 mb-6">
+              Premium digital services to help your business thrive in the online world.
+            </p>
+            <div className="flex gap-4">
+              <Link
+                to="#"
+                className="h-10 w-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold/20 transition-colors">
+                <Facebook />
+              </Link>
+              <Link
+                to="#"
+                className="h-10 w-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold/20 transition-colors">
+                <Twitter />
+              </Link>
+              <Link
+                to="#"
+                className="h-10 w-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold/20 transition-colors">
+                <Instagram />
+              </Link>
+              <Link
+                to="#"
+                className="h-10 w-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold/20 transition-colors">
+                <Linkedin />
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
+            <ul className="space-y-2">
+              {services.map((service) => (
+                <div key={service.slug}>
+                    <Link to={service.slug} className="text-white/70 hover:text-gold transition-colors">{service.name}</Link>
+                </div>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
+            <ul className="space-y-2">
+              {company.map((company) => (
+                <div key={company.slug}>
+                  <Link to={company.slug} className="text-white/70 hover:text-gold transition-colors">{company.name}</Link>
+                </div>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-gold mt-1"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span className="text-white/70">+1 (123) 456-7890</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-gold mt-1"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span className="text-white/70">info@AURA ENTERPRISES.com</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-gold mt-1"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span className="text-white/70">
+                  123 Business Avenue, Suite 500
+                  <br />
+                  New York, NY 10001
                 </span>
-                </div>
-            </div>
-        </footer>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gold/20 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-white/50 text-sm">© {new Date().getFullYear()} AURA ENTERPRISES. All rights reserved.</p>
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <Link to="#" className="text-white/50 text-sm hover:text-gold transition-colors">
+              Privacy Policy
+            </Link>
+            <Link to="#" className="text-white/50 text-sm hover:text-gold transition-colors">
+              Terms of Service
+            </Link>
+            <Link to="#" className="text-white/50 text-sm hover:text-gold transition-colors">
+              Cookie Policy
+            </Link>
+          </div>
+        </div>
+      </div>
+      </footer>
     )
 }
 export default Footer
