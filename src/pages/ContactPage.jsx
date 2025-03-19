@@ -41,7 +41,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-black">Phone</h3>
-                      <p className="text-black/70">+1 (123) 456-7890</p>
+                      <a href="https://wa.me/+923174708980" target="_blank"><p className="text-black/70">+92 317 4708980</p></a>
                     </div>
                   </div>
 
@@ -51,7 +51,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-black">Email</h3>
-                      <p className="text-black/70">info@AURA ENTERPRISESagency.com</p>
+                      <a href="mailto:info@auraenterprices.com" target="_blank"><p className="text-black/70">info@auraenterprices.com</p></a>
                     </div>
                   </div>
 
@@ -169,7 +169,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-xl border border-black/10 p-8">
+            <div className="bg-white rounded-xl border border-black/10 p-8 text-black">
               <h2 className="text-2xl font-bold text-black mb-6">Send Us a Message</h2>
               <form>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">

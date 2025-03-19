@@ -1,4 +1,5 @@
 import { CheckCircle, ArrowRight, Globe, Code, BarChart, Megaphone, Star, Layers } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function ServicesPage() {
   return (
@@ -605,18 +606,18 @@ export default function ServicesPage() {
               Contact us today to discuss your project and discover how our services can help your business grow in the digital landscape.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
-                href="/contact" 
+              <Link 
+                to="/contact" 
                 className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
               >
                 Get Started
-              </a>
-              <a 
-                href="/contact" 
+              </Link>
+              <Link 
+                to="/contact" 
                 className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
               >
                 Schedule a Consultation
-              </a>
+              </Link>
             </div>
           </div>
         </div>

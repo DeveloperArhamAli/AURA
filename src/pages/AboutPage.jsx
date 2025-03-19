@@ -320,7 +320,7 @@ export default function AboutPage() {
           {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {[...Array(6)].map((_, i) => (
               <div key={i} className="flex items-center justify-center p-4">
-                <img 
+                <img
                   src="/placeholder-logo.svg" 
                   alt={`Client Logo ${i+1}`} 
                   className="max-h-12 opacity-70 hover:opacity-100 transition-opacity"

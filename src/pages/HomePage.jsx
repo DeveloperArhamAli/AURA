@@ -1,4 +1,4 @@
-import { ChevronRight, Globe, Code, BarChart, Megaphone, CheckCircle, Star } from "lucide-react"
+import { ChevronRight, Globe, Code, BarChart, Megaphone, CheckCircle, Star, Video, FileImage, Camera, BookOpenCheck } from "lucide-react"
 import Button from "../components/Button"
 import Card from "../components/Card"
 import Testimonial from "../components/Testimonial"
@@ -46,17 +46,17 @@ function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-              <Card icon={<Globe className="h-6 w-6 text-gold" />} name="Web Development" description="Custom websites and web applications built with the latest technologies to deliver exceptional user experiences." />
+              <Card icon={<Globe className="h-6 w-6 text-gold" />} name="Web Development" description="Building responsive, high-performing websites tailored to your needs." to="/services/web-development" />
 
-              <Card icon={<Code className="h-6 w-6 text-gold" />} name="App Development" description="Native and cross-platform mobile applications designed to engage users and drive business growth." />
+              <Card icon={<Video className="h-6 w-6 text-gold" />} name="Video Editing" description="Crafting high-quality, engaging videos with seamless transitions and effects." to="/services/video-editing" />
 
-              <Card icon={<BarChart className="h-6 w-6 text-gold" />} name="Data Analytics" description="Comprehensive data analysis and visualization to help you make informed business decisions." />
+              <Card icon={<FileImage className="h-6 w-6 text-gold" />} name="Graphic Designing" description="Creating visually stunning designs that enhance brand identity." to="/services/graphic-designing" />
 
-              <Card icon={<Megaphone className="h-6 w-6 text-gold" />} name="Digital Marketing" description="Strategic marketing campaigns to increase your online visibility and drive targeted traffic to your business." />
+              <Card icon={<Camera className="h-6 w-6 text-gold" />} name="Photography" description="Capturing professional and artistic images for various needs." to="/services/photography" />
 
-              <Card icon={<CheckCircle className="h-6 w-6 text-gold" />} name="SEO Optimization" description="Improve your search engine rankings and drive organic traffic to your website with our SEO services." />
+              <Card icon={<CheckCircle className="h-6 w-6 text-gold" />} name="SEO Optimization" description="Optimizing websites to rank higher and drive organic traffic." to="/services/seo" />
 
-              <Card icon={<Star className="h-6 w-6 text-gold" />} name="Brand Strategy" description="Develop a strong brand identity and strategy to differentiate your business in a competitive market." />
+              <Card icon={<BookOpenCheck className="h-6 w-6 text-gold" />} name="Assignments" description="Providing well-structured, high-quality academic and professional assignments." to="/services/assignments" />
 
             </div>
           </div>
