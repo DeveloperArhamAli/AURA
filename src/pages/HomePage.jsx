@@ -1,16 +1,20 @@
-import { ChevronRight, Globe, Code, BarChart, Megaphone, CheckCircle, Star, Video, FileImage, Camera, BookOpenCheck } from "lucide-react"
-import Button from "../components/Button"
-import Card from "../components/Card"
-import Testimonial from "../components/Testimonial"
+import { Globe, CheckCircle, Video, FileImage, Camera, BookOpenCheck } from "lucide-react"
 import OfficeImage from "../assets/office.jpg"
 import Person1 from "../assets/person1.jpeg"
 import Person2 from "../assets/peson2.jpeg"
 import Person3 from "../assets/person3.jpeg"
+import { Button, Card, Testimonial } from "../components/index.js"
+import { Helmet } from "react-helmet"
 
 function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
-
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home | AURA ENTERPRISES</title>
+        <meta name='keywords' content='digital marketing services, web development company, seo services, graphic design services, website optimization, e-commerce development, content marketing agency, social media management, branding services, professional video editing' />
+        <meta name='description' content='AURA ENTERPRISES offers expert web development, SEO, graphic design, and digital marketing services. Boost your online presence with professional solutions tailored to your business needs.' />
+      </Helmet>
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative bg-black/75 py-20 md:py-32">

@@ -1,10 +1,18 @@
 import { CheckCircle, Search, TrendingUp, Code, Settings, ArrowRight, FileText } from "lucide-react"
+import { Helmet } from "react-helmet"
 
 export default function SeoPage() {
   return (
     <div className="flex min-h-screen flex-col">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>SEO Services | AURA ENTERPRISES</title>
+        <meta name="keywords" content="seo services, search engine optimizations, keyword research tools, on-page seo techniques, link building strategies, content marketing services, technical seo audit, seo consulting, local seo services, seo audit checklist" />
+        <meta name="description" content="Boost your website's search rankings with AURA ENTERPRISES' expert SEO services. We specialize in keyword research, on-page SEO, link building, technical SEO, and content marketing to drive organic traffic and business growth. Get data-driven strategies for long-term success." />
+      </Helmet>
+      
       {/* Hero Section */}
-      <section className="relative bg-black py-20">
+      <section className="relative bg-black py-20 px-8">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container relative z-10">
           <div className="max-w-3xl">
@@ -12,11 +20,10 @@ export default function SeoPage() {
               SEO
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-              Dominate Search Results with Our <span className="text-gold">SEO</span> Services
+              Dominate Search Results with Our <span className="text-gold">Expert SEO</span> Services
             </h1>
             <p className="text-xl text-white/70 mb-8">
-              Improve your website's visibility, drive organic traffic, and achieve sustainable growth with our expert
-              SEO solutions.
+              Improve your website's visibility, drive organic traffic, and achieve sustainable growth with our data-driven SEO strategies tailored for long-term success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -37,7 +44,7 @@ export default function SeoPage() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -46,15 +53,10 @@ export default function SeoPage() {
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Data-Driven SEO Strategies</h2>
               <p className="text-black/70 mb-6">
-                At AURA ENTERPRISES, we believe that effective SEO is about more than just keywords—it's about understanding your
-                audience, analyzing data, and implementing strategies that drive sustainable results. Our team of SEO
-                experts combines technical expertise with creative thinking to deliver customized solutions that improve
-                your website's visibility, attract organic traffic, and achieve your business goals.
+                At AURA ENTERPRISES, we believe that SEO is more than just keywords—it's about understanding your audience, analyzing data, and implementing strategies that drive real business growth. Our expert team combines technical expertise with creative innovation to deliver customized SEO solutions that improve your website's rankings and attract high-quality traffic.
               </p>
               <p className="text-black/70 mb-8">
-                Whether you need help with keyword research, on-page optimization, link building, or content marketing,
-                we have the skills and experience to bring your vision to life. We focus on creating data-driven
-                strategies that are tailored to your specific industry, target audience, and business objectives.
+                Whether you need help with keyword research, on-page optimization, link building, or content marketing, we have the expertise to make it happen. Our strategies are tailored to your industry, audience, and business goals for maximum impact.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -62,7 +64,7 @@ export default function SeoPage() {
                   <CheckCircle className="h-6 w-6 text-gold shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-lg font-semibold text-black">Data-Driven Strategies</h3>
-                    <p className="text-black/70">SEO based on analytics and insights</p>
+                    <p className="text-black/70">SEO based on deep analytics & insights</p>
                   </div>
                 </div>
 
@@ -70,7 +72,7 @@ export default function SeoPage() {
                   <CheckCircle className="h-6 w-6 text-gold shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-lg font-semibold text-black">Technical Expertise</h3>
-                    <p className="text-black/70">Professional SEO techniques and tools</p>
+                    <p className="text-black/70">Cutting-edge SEO tools & best practices</p>
                   </div>
                 </div>
 
@@ -78,15 +80,15 @@ export default function SeoPage() {
                   <CheckCircle className="h-6 w-6 text-gold shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-lg font-semibold text-black">Transparent Reporting</h3>
-                    <p className="text-black/70">Clear and concise progress reports</p>
+                    <p className="text-black/70">Clear, trackable SEO progress</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-gold shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="text-lg font-semibold text-black">Sustainable Results</h3>
-                    <p className="text-black/70">Long-term SEO success and growth</p>
+                    <h3 className="text-lg font-semibold text-black">Sustainable Growth</h3>
+                    <p className="text-black/70">Long-term results without shortcuts</p>
                   </div>
                 </div>
               </div>
@@ -104,16 +106,15 @@ export default function SeoPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
               Our Services
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Comprehensive SEO Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Comprehensive SEO Solutions</h2>
             <p className="max-w-3xl mx-auto text-white/70">
-              We offer a full range of SEO services to meet your specific business needs and help you achieve your
-              online marketing goals.
+              We offer a comprehensive range of SEO solutions to help your business grow online.
             </p>
           </div>
 
@@ -125,7 +126,7 @@ export default function SeoPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Keyword Research</h3>
               <p className="text-white/70 mb-6">
-                In-depth keyword research to identify the most relevant and high-traffic keywords for your business.
+                Find high-impact keywords to drive relevant traffic.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
@@ -134,7 +135,7 @@ export default function SeoPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Competitor analysis</span>
+                  <span className="text-white/70">Competitor research</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
@@ -150,20 +151,20 @@ export default function SeoPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">On-Page Optimization</h3>
               <p className="text-white/70 mb-6">
-                Comprehensive on-page optimization to improve your website's search engine rankings and user experience.
+                Optimize your website for better rankings & user experience.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Title tag optimization</span>
+                  <span className="text-white/70">Title & meta tags</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Meta description optimization</span>
+                  <span className="text-white/70">Header & content optimization</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Header tag optimization</span>
+                  <span className="text-white/70">Internal linking strategy</span>
                 </li>
               </ul>
             </div>
@@ -175,8 +176,7 @@ export default function SeoPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Link Building</h3>
               <p className="text-white/70 mb-6">
-                Strategic link building campaigns to increase your website's authority and improve search engine
-                rankings.
+                Build high-quality backlinks to boost domain authority.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
@@ -201,20 +201,20 @@ export default function SeoPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Content Marketing</h3>
               <p className="text-white/70 mb-6">
-                High-quality content creation and promotion to attract and engage your target audience.
+                Create & promote SEO-friendly content that engages.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Blog posts</span>
+                  <span className="text-white/70">Blog posts & articles</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Articles</span>
+                  <span className="text-white/70">Infographics & guides</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Infographics</span>
+                  <span className="text-white/70">Viral content strategies</span>
                 </li>
               </ul>
             </div>
@@ -226,7 +226,7 @@ export default function SeoPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Technical SEO</h3>
               <p className="text-white/70 mb-6">
-                Technical website optimization to improve crawlability, site speed, and mobile-friendliness.
+                Enhance your website performance & indexability.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
@@ -235,11 +235,11 @@ export default function SeoPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Mobile optimization</span>
+                  <span className="text-white/70">Mobile & schema optimization</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Schema markup</span>
+                  <span className="text-white/70">Crawlability & indexing fixes</span>
                 </li>
               </ul>
             </div>
@@ -251,8 +251,7 @@ export default function SeoPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">SEO Audits & Consulting</h3>
               <p className="text-white/70 mb-6">
-                Comprehensive SEO audits and consulting services to identify areas for improvement and develop effective
-                strategies.
+                Get an in-depth SEO strategy tailored to your business.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
@@ -261,11 +260,11 @@ export default function SeoPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Strategy development</span>
+                  <span className="text-white/70">SEO roadmap & strategy</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Ongoing support</span>
+                  <span className="text-white/70">Ongoing consultation</span>
                 </li>
               </ul>
             </div>
@@ -274,7 +273,7 @@ export default function SeoPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -282,7 +281,7 @@ export default function SeoPage() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">How We Improve Your SEO</h2>
             <p className="max-w-3xl mx-auto text-black/70">
-              Our proven SEO process ensures we deliver high-quality results that meet your specific business needs.
+              We follow a proven 4-step process to drive success.
             </p>
           </div>
 
@@ -296,8 +295,7 @@ export default function SeoPage() {
                 </div>
                 <h3 className="text-xl font-bold text-black mb-3 text-center">Discovery</h3>
                 <p className="text-black/70 text-center">
-                  We start by understanding your business, goals, target audience, and specific requirements for your
-                  SEO project.
+                  We analyze your business goals, industry, and competitors.
                 </p>
               </div>
 
@@ -306,10 +304,9 @@ export default function SeoPage() {
                 <div className="w-12 h-12 rounded-full bg-gold text-black flex items-center justify-center text-xl font-bold mb-6 mx-auto">
                   2
                 </div>
-                <h3 className="text-xl font-bold text-black mb-3 text-center">Analysis & Planning</h3>
+                <h3 className="text-xl font-bold text-black mb-3 text-center">Planning & Strategy</h3>
                 <p className="text-black/70 text-center">
-                  We conduct a comprehensive website analysis and develop a customized SEO strategy tailored to your
-                  specific needs.
+                  We create a custom SEO roadmap based on data-driven insights.
                 </p>
               </div>
 
@@ -320,8 +317,7 @@ export default function SeoPage() {
                 </div>
                 <h3 className="text-xl font-bold text-black mb-3 text-center">Implementation</h3>
                 <p className="text-black/70 text-center">
-                  Our SEO experts implement the agreed-upon strategies, optimizing your website and content for search
-                  engines.
+                  Our team optimizes your website and builds authority through content & backlinks.
                 </p>
               </div>
 
@@ -332,8 +328,7 @@ export default function SeoPage() {
                 </div>
                 <h3 className="text-xl font-bold text-black mb-3 text-center">Monitoring & Reporting</h3>
                 <p className="text-black/70 text-center">
-                  We continuously monitor your website's performance and provide you with regular reports on our
-                  progress and results.
+                  We track performance and refine strategies for continued growth.
                 </p>
               </div>
             </div>
@@ -342,7 +337,7 @@ export default function SeoPage() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 bg-black">
+      <section id="portfolio" className="py-20 bg-black px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -350,8 +345,7 @@ export default function SeoPage() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Recent SEO Success Stories</h2>
             <p className="max-w-3xl mx-auto text-white/70">
-              Take a look at some of our recent SEO projects and see how we've helped our clients achieve their online
-              marketing goals.
+              See how we've helped businesses grow with our SEO expertise.
             </p>
           </div>
 
@@ -366,9 +360,12 @@ export default function SeoPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">E-Commerce Website</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">E-Commerce Growth</h3>
+                    <p className="text-white/70 mb-2">
+                      <span className="text-gold">+200% organic traffic | +150% online sales</span>
+                    </p>
                     <p className="text-white/70 mb-4">
-                      Increased organic traffic by 200% and sales by 150% for a fashion retailer.
+                      Industry: Fashion Retail
                     </p>
                     <a href="#" className="inline-flex items-center text-gold font-medium">
                       View Case Study <ArrowRight className="ml-1 h-4 w-4" />
@@ -388,9 +385,12 @@ export default function SeoPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Corporate Website</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Corporate SEO Boost</h3>
+                    <p className="text-white/70 mb-2">
+                      <span className="text-gold">Higher search rankings | Brand awareness growth</span>
+                    </p>
                     <p className="text-white/70 mb-4">
-                      Improved search engine rankings and brand visibility for a financial services company.
+                      Industry: Financial Services
                     </p>
                     <a href="#" className="inline-flex items-center text-gold font-medium">
                       View Case Study <ArrowRight className="ml-1 h-4 w-4" />
@@ -410,9 +410,12 @@ export default function SeoPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Local Business</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Local Business Visibility</h3>
+                    <p className="text-white/70 mb-2">
+                      <span className="text-gold">Increased local search rankings | More customer inquiries</span>
+                    </p>
                     <p className="text-white/70 mb-4">
-                      Increased local search visibility and customer inquiries for a restaurant chain.
+                      Industry: Restaurant Chain
                     </p>
                     <a href="#" className="inline-flex items-center text-gold font-medium">
                       View Case Study <ArrowRight className="ml-1 h-4 w-4" />
@@ -435,7 +438,7 @@ export default function SeoPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -469,8 +472,7 @@ export default function SeoPage() {
                 ))}
               </div>
               <p className="text-black/70 mb-6">
-                "AURA ENTERPRISES's SEO services have transformed our online presence. Our website now ranks higher in search
-                results, and we've seen a significant increase in organic traffic and leads."
+                "AURA ENTERPRISES transformed our online presence. Our rankings improved, and organic traffic skyrocketed!"
               </p>
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 rounded-full bg-black/10 overflow-hidden">
@@ -508,9 +510,7 @@ export default function SeoPage() {
                 ))}
               </div>
               <p className="text-black/70 mb-6">
-                "Working with AURA ENTERPRISES on our SEO strategy has been a game-changer for our business. Their team is
-                knowledgeable, responsive, and always delivers results. Our online sales have increased significantly
-                since we implemented their recommendations."
+                "Working with AURA ENTERPRISES was a game-changer. Our online sales increased significantly!"
               </p>
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 rounded-full bg-black/10 overflow-hidden">
@@ -548,9 +548,7 @@ export default function SeoPage() {
                 ))}
               </div>
               <p className="text-black/70 mb-6">
-                "AURA ENTERPRISES's SEO consulting services have been invaluable for our company. Their team provided us with a
-                clear and actionable strategy that has helped us improve our search engine rankings and attract more
-                customers to our website."
+                "Their SEO consulting services provided us with a clear strategy that improved our rankings!"
               </p>
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 rounded-full bg-black/10 overflow-hidden">
@@ -571,7 +569,7 @@ export default function SeoPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -588,9 +586,7 @@ export default function SeoPage() {
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-white mb-2">What is SEO and why is it important?</h3>
                   <p className="text-white/70">
-                    SEO (Search Engine Optimization) is the process of optimizing your website to rank higher in search
-                    engine results pages (SERPs). It's important because it helps you attract more organic traffic,
-                    increase brand visibility, and generate leads.
+                    SEO (Search Engine Optimization) helps your website rank higher on Google, driving organic traffic and business growth.
                   </p>
                 </div>
               </div>
@@ -599,13 +595,10 @@ export default function SeoPage() {
               <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-white mb-2">
-                    How long does it take to see results from SEO?
+                    How long does SEO take to show results?
                   </h3>
                   <p className="text-white/70">
-                    The timeline for seeing results from SEO varies depending on various factors, including the
-                    competitiveness of your industry, the current state of your website, and the strategies implemented.
-                    It typically takes 3-6 months to see significant improvements in search engine rankings and organic
-                    traffic.
+                    SEO typically takes 3-6 months to see measurable improvements, depending on industry competition and website status.
                   </p>
                 </div>
               </div>
@@ -613,10 +606,9 @@ export default function SeoPage() {
               {/* FAQ Item 3 */}
               <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">What is included in your SEO services?</h3>
+                  <h3 className="text-lg font-semibold text-white mb-2">What's included in your SEO services?</h3>
                   <p className="text-white/70">
-                    Our SEO services include keyword research, on-page optimization, link building, content marketing,
-                    technical SEO, and ongoing monitoring and reporting.
+                    We offer keyword research, on-page SEO, link building, content marketing, technical SEO, and ongoing reporting.
                   </p>
                 </div>
               </div>
@@ -625,11 +617,10 @@ export default function SeoPage() {
               <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-white mb-2">
-                    How do you measure the success of your SEO campaigns?
+                    How do you measure SEO success?
                   </h3>
                   <p className="text-white/70">
-                    We measure the success of our SEO campaigns by tracking key metrics such as search engine rankings,
-                    organic traffic, website conversions, and return on investment (ROI).
+                    We track rankings, traffic, conversions, and ROI to ensure growth.
                   </p>
                 </div>
               </div>
@@ -637,11 +628,9 @@ export default function SeoPage() {
               {/* FAQ Item 5 */}
               <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">What is your approach to link building?</h3>
+                  <h3 className="text-lg font-semibold text-white mb-2">What's your approach to link building?</h3>
                   <p className="text-white/70">
-                    We use a variety of ethical and effective link building strategies to increase your website's
-                    authority and improve search engine rankings. Our approach includes guest posting, directory
-                    submissions, and link outreach.
+                    We focus on white-hat strategies like guest posting, directory submissions, and outreach for high-quality backlinks.
                   </p>
                 </div>
               </div>
@@ -655,11 +644,10 @@ export default function SeoPage() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Ready to <span className="text-gold">Dominate Search Results</span>?
+              Ready to <span className="text-gold">Dominate Google Rankings</span>?
             </h2>
             <p className="text-black/70 mb-10 text-lg">
-              Contact us today to discuss your SEO needs and discover how our services can help your business grow in
-              the digital landscape.
+              Contact us today and start growing your business with expert SEO strategies.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
@@ -681,4 +669,3 @@ export default function SeoPage() {
     </div>
   )
 }
-

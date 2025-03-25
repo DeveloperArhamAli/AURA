@@ -1,35 +1,27 @@
+import { CheckCircle } from "lucide-react"
+
 function ServiceCard({
+    icon,
     heading,
     description,
-    image = "https://images.pexels.com/photos/28643822/pexels-photo-28643822/free-photo-of-urban-architectural-scene-with-dramatic-shadows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    bgColor,
-    className,
-    imagePosition = "left",
+    features = [],
 }) {
     return (
-        <>
-        {imagePosition === "left" ? (
-            <div className={`flex gap-7 p-8 mb-5 ${bgColor} ${className}`}>
-                <div className="w-1/4">
-                    <img src={image} className="w-full" alt="" />
-                </div>
-                <div className="flex flex-col w-3/3 justify-center">
-                    <h1 className="text-4xl">{heading}</h1>
-                    <p className="text-lg mt-2">{description}</p>
-                </div>
+        <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
+            <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
+                {icon}
             </div>
-        ) : (
-            <div className={`flex gap-7 p-8 mb-5 ${bgColor} ${className}`}>
-                <div className="flex flex-col w-3/3 justify-center">
-                    <h1 className="text-4xl">{heading}</h1>
-                    <p className="text-lg mt-2">{description}</p>
-                </div>
-                <div className="w-1/4">
-                    <img src="https://images.pexels.com/photos/28643822/pexels-photo-28643822/free-photo-of-urban-architectural-scene-with-dramatic-shadows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" className="w-full" alt="" />
-                </div>
-            </div>
-        )}
-        </>
+            <h3 className="text-xl font-bold text-white mb-3">{heading}</h3>
+            <p className="text-white/70">{description}</p>
+            <ul className="space-y-2">
+                {features.map((feature) => (
+                    <li className="flex items-start gap-2">
+                        <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
+                        <span className="text-white/70">{feature}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
     )
 }
 export default ServiceCard

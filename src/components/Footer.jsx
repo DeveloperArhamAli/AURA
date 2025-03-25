@@ -5,23 +5,27 @@ function Footer() {
   const services = [
     {
       name: "Web Development",
-      slug: "/services#web-development",
-    },
-    {
-      name: "Graphic Designing",
-      slug: "/services#graphic-designing",
-    },
-    {
-      name: "SEO",
-      slug: "/services#SEO",
-    },
-    {
-      name: "Photography",
-      slug: "/services#photography",
+      slug: "/services/web-development",
     },
     {
       name: "Video Editing",
-      slug: "/services#video-editing",
+      slug: "/services/video-editing"
+    },
+    {
+      name: "Graphic Designing",
+      slug: "/services/graphic-designing",
+    },
+    {
+      name: "Photography",
+      slug: "/services/photography",
+    },
+    {
+      name: "SEO Optimization",
+      slug: "/services/seo",
+    },
+    {
+      name: "Assignments",
+      slug: "/services/assignments",
     }
   ]
 
@@ -153,9 +157,7 @@ function Footer() {
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
                 <span className="text-white/70">
-                  123 Business Avenue, Suite 500
-                  <br />
-                  New York, NY 10001
+                  Street 123, Karachi, Pakistan.
                 </span>
               </li>
             </ul>

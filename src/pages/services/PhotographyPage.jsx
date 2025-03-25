@@ -1,10 +1,18 @@
-import { CheckCircle, Camera, Image, Users, MapPin, ArrowRight } from "lucide-react"
+import { CheckCircle, Camera, Image, Users, MapPin, ArrowRight, CalendarDays, Building, UsersRound } from "lucide-react"
+import { Button, ServiceCard } from "../../components/index.js"
+import { Helmet } from "react-helmet"
 
 export default function PhotographyPage() {
   return (
     <div className="flex min-h-screen flex-col">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Photography Services - Aura Enterprises</title>
+        <meta name="description" content="Capture life’s most precious moments with Aura Enterprises’ professional photography services. From wedding and event photography to portraits and real estate photography, we deliver high-quality, stunning visuals that tell your story. Book your session today and let us turn moments into memories" />
+        <meta name="keywords" content="portrait photography services, wedding photography, landscape photography, event photography, real estate photography, photography studio, family photography" />
+      </Helmet>
       {/* Hero Section */}
-      <section className="relative bg-black py-20">
+      <section className="relative bg-black py-20 px-8">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container relative z-10">
           <div className="max-w-3xl">
@@ -19,12 +27,7 @@ export default function PhotographyPage() {
               with your audience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="/contact"
-                className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
-              >
-                Get Started
-              </a>
+              <Button to="/contact" className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black" children="Get Started" />
               <a
                 href="#portfolio"
                 className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
@@ -37,27 +40,17 @@ export default function PhotographyPage() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
                 Our Approach
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Capturing Moments That Matter</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Capture Timeless Moments with Perfection</h2>
               <p className="text-black/70 mb-6">
-                At AURA ENTERPRISES, we believe that powerful photography is about more than just taking pictures—it's about
-                telling stories, evoking emotions, and creating lasting impressions. Our team of experienced
-                photographers combines technical expertise with creative vision to deliver stunning images that capture
-                your brand's essence and connect with your audience.
+                At Aura Enterprises, we specialize in professional photography services that bring your memories to life. From stunning portraits to breathtaking wedding shots, we ensure every moment is preserved beautifully. Let us turn your vision into reality.
               </p>
-              <p className="text-black/70 mb-8">
-                Whether you need product photography, corporate headshots, event coverage, or lifestyle imagery, we have
-                the skills and equipment to bring your vision to life. We focus on understanding your brand, target
-                audience, and specific requirements to create images that align with your goals and exceed your
-                expectations.
-              </p>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-gold shrink-0 mt-0.5" />
@@ -105,7 +98,7 @@ export default function PhotographyPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -118,159 +111,19 @@ export default function PhotographyPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Image className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Product Photography</h3>
-              <p className="text-white/70 mb-6">
-                High-quality product photography that showcases your products in the best light and drives conversions.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">E-commerce photography</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Lifestyle product shots</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Packaging photography</span>
-                </li>
-              </ul>
-            </div>
 
-            {/* Service 2 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Users className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Corporate Photography</h3>
-              <p className="text-white/70 mb-6">
-                Professional corporate photography that humanizes your brand and builds trust with your audience.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Executive portraits</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Team photography</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Office environment</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<Image className="h-6 w-6 text-gold" />} heading="Portrait Photography" description="Capture your personality with high-quality portrait photography. Perfect for personal branding, social media, and professional portfolios." />
+            
+            <ServiceCard icon={<Users className="h-6 w-6 text-gold" />} heading="Wedding Photography" description="Your special day deserves extraordinary photos. Our expert wedding photographers ensure every emotion and detail is preserved forever." />
 
-            {/* Service 3 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Camera className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Event Photography</h3>
-              <p className="text-white/70 mb-6">
-                Comprehensive event coverage that captures the key moments and atmosphere of your corporate or social
-                events.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Corporate events</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Conferences & seminars</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Award ceremonies</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<Camera className="h-6 w-6 text-gold" />} heading="Landscape Photography" description="We bring nature to life with stunning landscape photography. Ideal for travel, tourism, and artistic collections." />
 
-            {/* Service 4 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <MapPin className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Real Estate Photography</h3>
-              <p className="text-white/70 mb-6">
-                Professional real estate photography that showcases properties in their best light and helps attract
-                potential buyers.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Interior photography</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Exterior & architectural</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Aerial photography</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<CalendarDays className="h-6 w-6 text-gold" />} heading="Event Photography" description="From corporate events to private parties, we capture every key moment with professionalism and creativity." />
 
-            {/* Service 5 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Image className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Lifestyle Photography</h3>
-              <p className="text-white/70 mb-6">
-                Authentic lifestyle photography that tells your brand's story and connects with your audience on an
-                emotional level.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Brand storytelling</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Social media content</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Marketing campaigns</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<Building className="h-6 w-6 text-gold" />} heading="Real Estate Photography" description="High-quality real estate photography to showcase properties in the best light, perfect for marketing and sales." />
 
-            {/* Service 6 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <ArrowRight className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Food & Beverage Photography</h3>
-              <p className="text-white/70 mb-6">
-                Appetizing food and beverage photography that showcases your culinary creations and entices your
-                audience.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Menu photography</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Restaurant ambiance</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Promotional campaigns</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<UsersRound className="h-6 w-6 text-gold" />} heading="Family Photography" description="Create lifelong memories with heartwarming family photography that captures love and connection." />
+
           </div>
         </div>
       </section>

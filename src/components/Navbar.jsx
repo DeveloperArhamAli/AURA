@@ -23,7 +23,7 @@ function Navbar() {
     ]
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-gold/20 bg-black/95 backdrop-blur px-8">
+        <header className="sticky top-0 z-50 w-full border-b border-gold/20 bg-black/95 backdrop-blur px-12">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             {/* <Globe className="h-6 w-6 text-gold" /> */}

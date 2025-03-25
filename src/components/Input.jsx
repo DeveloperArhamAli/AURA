@@ -4,25 +4,24 @@ const Input = forwardRef(function Input({
     label,
     type = "text",
     className = "",
+    placeHolder,
     ...props
 }, ref) {
     const id = useId()
 
     return (
-        <div className="w-full">
-            {label && 
-            <label 
-                className="inline-block mb-1 pl-1 text-black"
-                htmlFor={id}>
-                    {label}
-            </label>
-            }
-            <input 
-                type={type}
-                className={`px-3 py-2 rounded-lg bg-white text-black outline-none focus:bg-gray-50 duration-200 border border-black w-full ${className}`}
-                ref={ref}
-                {...props}
-                id={id}/>
+        <div>
+            {label && (
+                <label htmlFor={id} className="block text-sm font-medium text-black/70 mb-2">{label}</label>
+            )}
+        <input
+            type={type}
+            id={id}
+            className={`w-full px-4 py-3 rounded-md border border-black/20 focus:outline-none focus:ring-2 focus:ring-gold/50 ${className}`}
+            ref={ref}
+            placeholder={placeHolder}
+            {...props}
+        />
         </div>
     )
 })

@@ -1,10 +1,22 @@
-import { CheckCircle, Video, Film, Play, Edit, ArrowRight } from 'lucide-react'
+import { CheckCircle, Video, Film, Edit, ArrowRight } from 'lucide-react'
+import image from "../../assets/office.jpg"
+import Person1 from "../../assets/person1.jpeg"
+import Person2 from "../../assets/peson2.jpeg"
+import Person3 from "../../assets/person3.jpeg"
+import { Button, ContactFooterComponent, FaqCard, ProjectShowcaseCard, ServiceCard, Testimonial, WorkCard } from "../../components/index.js"
+import { Helmet } from 'react-helmet'
 
 export default function VideoEditingPage() {
   return (
     <div className="flex min-h-screen flex-col">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Video Editing - Aura Enterprises</title>
+        <meta name='keywords' content='video editing, software, music video, after effects,	videography, video production, video production services,	video company, videography company' />
+        <meta name='description' content='Enhance your content with Aura Enterprises’ professional video editing services. From cinematic wedding films to dynamic social media content, we craft visually stunning videos that engage and captivate. Get seamless transitions, color grading, and expert editing tailored to your needs. Elevate your videos today.' />
+      </Helmet>
       {/* Hero Section */}
-      <section className="relative bg-black py-20">
+      <section className="relative bg-black py-20 px-8">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container relative z-10">
           <div className="max-w-3xl">
@@ -18,25 +30,15 @@ export default function VideoEditingPage() {
               Transform your raw footage into compelling, professional videos that captivate your audience and elevate your brand.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="/contact" 
-                className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
-              >
-                Get Started
-              </a>
-              <a 
-                href="#portfolio" 
-                className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
-              >
-                View Portfolio
-              </a>
+              <Button to="/contact" className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black" children="Get Started"/>
+              <a href="#portfolio" className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium">View Portfolio</a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Overview Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -44,15 +46,11 @@ export default function VideoEditingPage() {
                 Our Approach
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-                Cinematic Video Editing Solutions
+              Transform Your Vision into Reality
               </h2>
               <p className="text-black/70 mb-6">
-                At AURA ENTERPRISES, we specialize in professional video editing services that transform raw footage into compelling, polished videos. Our team of experienced editors combines technical expertise with creative vision to deliver high-quality videos that engage your audience and achieve your goals.
+                At Aura Enterprises, we specialize in delivering top-notch video editing services that bring your ideas to life. Whether it's a promotional video, a music video, or a corporate presentation, our team ensures exceptional quality and creativity.
               </p>
-              <p className="text-black/70 mb-8">
-                Whether you need corporate videos, social media content, promotional videos, or event coverage, we have the skills and experience to bring your vision to life. We focus on storytelling, pacing, and visual aesthetics to create videos that leave a lasting impression.
-              </p>
-              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-gold shrink-0 mt-0.5" />
@@ -101,15 +99,10 @@ export default function VideoEditingPage() {
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gold/20 rounded-lg"></div>
               <div className="relative z-10 rounded-lg overflow-hidden border-2 border-gold/30">
                 <img 
-                  src="/placeholder.svg?height=600&width=800" 
+                  src={image}
                   alt="Video Editing" 
                   className="w-full h-auto"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gold/80 flex items-center justify-center cursor-pointer">
-                    <Play className="h-8 w-8 text-black" fill="black" />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -131,156 +124,20 @@ export default function VideoEditingPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Film className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Corporate Videos</h3>
-              <p className="text-white/70 mb-6">
-                Professional corporate videos that communicate your brand message effectively and engage your target audience.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Company profiles</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Product demonstrations</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Training videos</span>
-                </li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 pr-0">
+
+            <ServiceCard icon={<Film className="h-6 w-6 text-gold" />} heading="Professional Video Editing" description="Our expert editors use industry-leading software to craft seamless and engaging videos that captivate your audience." />
             
-            {/* Service 2 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Video className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Social Media Videos</h3>
-              <p className="text-white/70 mb-6">
-                Engaging, platform-specific videos optimized for social media to increase engagement and reach.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Instagram Reels & Stories</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">TikTok videos</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">YouTube content</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<Video className="h-6 w-6 text-gold" />} heading="Custom Animations" description="Enhance your videos with tailor-made animations that add a unique flair and effectively convey your message." />
             
-            {/* Service 3 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Edit className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Commercial & Promotional</h3>
-              <p className="text-white/70 mb-6">
-                Compelling commercials and promotional videos that showcase your products or services and drive conversions.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">TV commercials</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Web advertisements</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Product launches</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<Edit className="h-6 w-6 text-gold" />} heading="Color Grading" description="Achieve the perfect mood and tone with our precise color grading services, ensuring visual consistency across all scenes."  />
             
-            {/* Service 4 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Film className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Event Coverage</h3>
-              <p className="text-white/70 mb-6">
-                Professional event video editing that captures the essence and highlights of your corporate or personal events.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Conferences & seminars</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Corporate events</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Weddings & celebrations</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<Film className="h-6 w-6 text-gold" />} heading="Sound Design" description="From background scores to sound effects, we ensure your video's audio is crisp, clear, and immersive." />
             
-            {/* Service 5 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <Video className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Educational Content</h3>
-              <p className="text-white/70 mb-6">
-                Engaging educational and instructional videos that effectively communicate complex information.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Tutorial videos</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">E-learning content</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Explainer videos</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<Video className="h-6 w-6 text-gold" />} heading="Motion Graphics" description="Incorporate dynamic motion graphics to make your content more engaging and visually appealing." />
             
-            {/* Service 6 */}
-            <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8">
-              <div className="rounded-full bg-gold/10 p-3 w-fit mb-6">
-                <ArrowRight className="h-6 w-6 text-gold" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Post-Production Services</h3>
-              <p className="text-white/70 mb-6">
-                Comprehensive post-production services to enhance and finalize your video content.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Color grading & correction</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Sound design & mixing</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-white/70">Motion graphics & VFX</span>
-                </li>
-              </ul>
-            </div>
+            <ServiceCard icon={<ArrowRight className="h-6 w-6 text-gold" />} heading="Consultation Services" description="Not sure where to start? Our team offers professional consultation to guide your project from concept to completion." />
+
           </div>
         </div>
       </section>
@@ -302,42 +159,16 @@ export default function VideoEditingPage() {
           
           <div className="relative">
             <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gold/30 -translate-y-1/2 z-0"></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
-              {/* Step 1 */}
-              <div className="bg-white p-6 rounded-xl border border-black/10 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-gold text-black flex items-center justify-center text-xl font-bold mb-6 mx-auto">1</div>
-                <h3 className="text-xl font-bold text-black mb-3 text-center">Consultation</h3>
-                <p className="text-black/70 text-center">
-                  We start by understanding your vision, goals, target audience, and specific requirements for your video project.
-                </p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10 px-8 pr-0">
+
+              <WorkCard variant='second' step={1} heading="Consultation" description="We start by understanding your vision, goals, target audience, and specific requirements for your video project." />
               
-              {/* Step 2 */}
-              <div className="bg-white p-6 rounded-xl border border-black/10 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-gold text-black flex items-center justify-center text-xl font-bold mb-6 mx-auto">2</div>
-                <h3 className="text-xl font-bold text-black mb-3 text-center">Planning & Storyboarding</h3>
-                <p className="text-black/70 text-center">
-                  We create a detailed plan and storyboard for your video, outlining the structure, flow, and key elements.
-                </p>
-              </div>
+              <WorkCard variant='second' step={2} heading="Planning & Storyboarding" description="We create a detailed plan and storyboard for your video, outlining the structure, flow, and key elements." />
               
-              {/* Step 3 */}
-              <div className="bg-white p-6 rounded-xl border border-black/10 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-gold text-black flex items-center justify-center text-xl font-bold mb-6 mx-auto">3</div>
-                <h3 className="text-xl font-bold text-black mb-3 text-center">Editing & Post-Production</h3>
-                <p className="text-black/70 text-center">
-                  Our editors bring your video to life, applying professional editing techniques, color grading, sound design, and visual effects.
-                </p>
-              </div>
+              <WorkCard variant='second' step={3} heading="Editing & Post-Production" description="Our editors bring your video to life, applying professional editing techniques, color grading, sound design, and visual effects." />
               
-              {/* Step 4 */}
-              <div className="bg-white p-6 rounded-xl border border-black/10 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-gold text-black flex items-center justify-center text-xl font-bold mb-6 mx-auto">4</div>
-                <h3 className="text-xl font-bold text-black mb-3 text-center">Review & Delivery</h3>
-                <p className="text-black/70 text-center">
-                  We provide you with a draft for review, make any necessary revisions, and deliver the final video in your preferred format.
-                </p>
-              </div>
+              <WorkCard variant='second' step={4} heading="Review & Delivery" description="We provide you with a draft for review, make any necessary revisions, and deliver the final video in your preferred format." />
+              
             </div>
           </div>
         </div>
@@ -354,187 +185,30 @@ export default function VideoEditingPage() {
               Recent Video Projects
             </h2>
             <p className="max-w-3xl mx-auto text-white/70">
-              Take a look at some of our recent video editing projects.
+              Explore some of our latest work that showcases our expertise and creativity.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className="group overflow-hidden rounded-xl">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/placeholder.svg?height=400&width=600" 
-                  alt="Project" 
-                  className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Corporate Brand Video</h3>
-                    <p className="text-white/70 mb-4">
-                      A corporate brand video for a technology company showcasing their products and services.
-                    </p>
-                    <a href="#" className="inline-flex items-center text-gold font-medium">
-                      Watch Video <ArrowRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gold/80 flex items-center justify-center cursor-pointer">
-                    <Play className="h-8 w-8 text-black" fill="black" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 pr-0">
+
+            <ProjectShowcaseCard image={image} heading="Corporate Brand Video" description="A corporate brand video for a technology company showcasing their products and services." linkText="Watch Video" to="#" />
             
-            {/* Project 2 */}
-            <div className="group overflow-hidden rounded-xl">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/placeholder.svg?height=400&width=600" 
-                  alt="Project" 
-                  className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Product Launch Video</h3>
-                    <p className="text-white/70 mb-4">
-                      A dynamic product launch video highlighting key features and benefits.
-                    </p>
-                    <a href="#" className="inline-flex items-center text-gold font-medium">
-                      Watch Video <ArrowRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gold/80 flex items-center justify-center cursor-pointer">
-                    <Play className="h-8 w-8 text-black" fill="black" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectShowcaseCard image={image} heading="Product Launch Video" description="A dynamic product launch video highlighting key features and benefits." linkText="Watch Video" to="#" />
             
-            {/* Project 3 */}
-            <div className="group overflow-hidden rounded-xl">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/placeholder.svg?height=400&width=600" 
-                  alt="Project" 
-                  className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Social Media Campaign</h3>
-                    <p className="text-white/70 mb-4">
-                      A series of engaging social media videos for a marketing campaign.
-                    </p>
-                    <a href="#" className="inline-flex items-center text-gold font-medium">
-                      Watch Video <ArrowRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gold/80 flex items-center justify-center cursor-pointer">
-                    <Play className="h-8 w-8 text-black" fill="black" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectShowcaseCard image={image} heading="Social Media Campaign" description="A series of engaging social media videos for a marketing campaign." linkText="Watch Video" to="#" />
+
+            <ProjectShowcaseCard image={image} heading="Corporate Brand Video" description="A corporate brand video for a technology company showcasing their products and services." linkText="Watch Video" to="#" />
             
-            {/* Project 4 */}
-            <div className="group overflow-hidden rounded-xl">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/placeholder.svg?height=400&width=600" 
-                  alt="Project" 
-                  className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Event Highlight Reel</h3>
-                    <p className="text-white/70 mb-4">
-                      A highlight reel capturing the key moments of a corporate conference.
-                    </p>
-                    <a href="#" className="inline-flex items-center text-gold font-medium">
-                      Watch Video <ArrowRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gold/80 flex items-center justify-center cursor-pointer">
-                    <Play className="h-8 w-8 text-black" fill="black" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectShowcaseCard image={image} heading="Product Launch Video" description="A dynamic product launch video highlighting key features and benefits." linkText="Watch Video" to="#" />
             
-            {/* Project 5 */}
-            <div className="group overflow-hidden rounded-xl">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/placeholder.svg?height=400&width=600" 
-                  alt="Project" 
-                  className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Explainer Video</h3>
-                    <p className="text-white/70 mb-4">
-                      An animated explainer video simplifying complex concepts for a tech company.
-                    </p>
-                    <a href="#" className="inline-flex items-center text-gold font-medium">
-                      Watch Video <ArrowRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gold/80 flex items-center justify-center cursor-pointer">
-                    <Play className="h-8 w-8 text-black" fill="black" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectShowcaseCard image={image} heading="Social Media Campaign" description="A series of engaging social media videos for a marketing campaign." linkText="Watch Video" to="#" />
             
-            {/* Project 6 */}
-            <div className="group overflow-hidden rounded-xl">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/placeholder.svg?height=400&width=600" 
-                  alt="Project" 
-                  className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">Training Video Series</h3>
-                    <p className="text-white/70 mb-4">
-                      A series of training videos for employee onboarding and development.
-                    </p>
-                    <a href="#" className="inline-flex items-center text-gold font-medium">
-                      Watch Video <ArrowRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gold/80 flex items-center justify-center cursor-pointer">
-                    <Play className="h-8 w-8 text-black" fill="black" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <a 
-              href="#" 
-              className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
-            >
-              View All Projects
-            </a>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-8">
         <div className="container">
           <div className="text-center mb-16">
             <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
@@ -549,86 +223,13 @@ export default function VideoEditingPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="rounded-xl border border-black/10 bg-white p-6 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#D4AF37" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                ))}
-              </div>
-              <p className="text-black/70 mb-6">
-                "AURA ENTERPRISES delivered an exceptional corporate video that perfectly captured our brand essence. Their attention to detail and creative approach transformed our raw footage into a compelling story that resonated with our audience."
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-black/10 overflow-hidden">
-                  <img 
-                    src="/placeholder.svg?height=100&width=100" 
-                    alt="Client" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-black">Sarah Thompson</h4>
-                  <p className="text-sm text-black/70">Marketing Director, TechInnovate</p>
-                </div>
-              </div>
-            </div>
             
-            {/* Testimonial 2 */}
-            <div className="rounded-xl border border-black/10 bg-white p-6 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#D4AF37" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                ))}
-              </div>
-              <p className="text-black/70 mb-6">
-                "The social media videos created by AURA ENTERPRISES have significantly increased our engagement and reach. Their team understood our brand voice and created content that resonated with our target audience. Highly recommended!"
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-black/10 overflow-hidden">
-                  <img 
-                    src="/placeholder.svg?height=100&width=100" 
-                    alt="Client" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-black">David Rodriguez</h4>
-                  <p className="text-sm text-black/70">Social Media Manager, Brand Forward</p>
-                </div>
-              </div>
-            </div>
+            <Testimonial stars={5} description="Working with AURA ENTERPRISES has been a game-changer for our business. Their web development team created a stunning website that perfectly represents our brand and has significantly increased our online conversions."name="Sarah Johnson" designation="CEO, TechInnovate" image={Person1} />
+
+            <Testimonial stars={5} description="The digital marketing strategy developed by AURA ENTERPRISES helped us reach our target audience effectively. We've seen a 200% increase in organic traffic and a significant boost in lead generation." name="Michael Chen" designation="Marketing Director, GrowthHub" image={Person2} />
+
+            <Testimonial stars={5} description="AURA ENTERPRISES delivered an exceptional mobile app that exceeded our expectations. Their attention to detail and commitment to quality is impressive. We highly recommend their services." name="Emily Rodriguez" designation="Product Manager, AppSolutions" image={Person3} />
             
-            {/* Testimonial 3 */}
-            <div className="rounded-xl border border-black/10 bg-white p-6 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#D4AF37" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                ))}
-              </div>
-              <p className="text-black/70 mb-6">
-                "AURA ENTERPRISES created an amazing highlight video for our annual conference. They captured all the key moments and created a compelling narrative that showcased the event perfectly. Their team was professional and delivered on time."
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-black/10 overflow-hidden">
-                  <img 
-                    src="/placeholder.svg?height=100&width=100" 
-                    alt="Client" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-black">Jennifer Lee</h4>
-                  <p className="text-sm text-black/70">Event Manager, Global Conferences</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -648,89 +249,33 @@ export default function VideoEditingPage() {
             </p>
           </div>
           
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto px-8 pr-0">
             <div className="space-y-6">
-              {/* FAQ Item 1 */}
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">How long does it take to edit a video?</h3>
-                  <p className="text-white/70">
-                    The timeline for video editing depends on the complexity and length of the project. A simple 1-2 minute video typically takes 3-5 business days, while more complex projects can take 1-2 weeks or more. We'll provide you with a detailed timeline during the initial consultation.
-                  </p>
-                </div>
-              </div>
+
+              <FaqCard question="How long does it take to edit a video?" answer="The timeline for video editing depends on the complexity and length of the project. A simple 1-2 minute video typically takes 3-5 business days, while more complex projects can take 1-2 weeks or more. We'll provide you with a detailed timeline during the initial consultation." />
               
-              {/* FAQ Item 2 */}
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">What formats do you deliver videos in?</h3>
-                  <p className="text-white/70">
-                    We can deliver videos in various formats depending on your needs, including MP4, MOV, AVI, and more. We also optimize videos for different platforms such as YouTube, Instagram, Facebook, and TikTok, ensuring they meet the specific requirements of each platform.
-                  </p>
-                </div>
-              </div>
+              <FaqCard question="What formats do you deliver videos in?" answer="We can deliver videos in various formats depending on your needs, including MP4, MOV, AVI, and more. We also optimize videos for different platforms such as YouTube, Instagram, Facebook, and TikTok, ensuring they meet the specific requirements of each platform." />
               
-              {/* FAQ Item 3 */}
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">Do you provide revisions?</h3>
-                  <p className="text-white/70">
-                    Yes, we include up to two rounds of revisions in our standard packages to ensure you're completely satisfied with the final product. Additional revisions can be accommodated at an extra cost.
-                  </p>
-                </div>
-              </div>
+              <FaqCard question="Do you provide revisions?" answer="Yes, we include up to two rounds of revisions in our standard packages to ensure you're completely satisfied with the final product. Additional revisions can be accommodated at an extra cost." />
               
-              {/* FAQ Item 4 */}
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">What if I don't have high-quality footage?</h3>
-                  <p className="text-white/70">
-                    While high-quality footage is ideal, our skilled editors can work with various quality levels of footage. We use advanced techniques to enhance and optimize your existing footage. We can also supplement with stock footage, animations, or graphics if needed.
-                  </p>
-                </div>
-              </div>
+              <FaqCard question="What if I don't have high-quality footage?" answer="While high-quality footage is ideal, our skilled editors can work with various quality levels of footage. We use advanced techniques to enhance and optimize your existing footage. We can also supplement with stock footage, animations, or graphics if needed." />
               
-              {/* FAQ Item 5 */}
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-lg overflow-hidden">
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">Do you provide video filming services as well?</h3>
-                  <p className="text-white/70">
-                    Yes, we offer comprehensive video production services, including filming. Our team can handle the entire process from concept development to filming and editing, providing you with a complete end-to-end solution.
-                  </p>
-                </div>
-              </div>
+              <FaqCard question="Do you provide video filming services as well?" answer="Yes, we offer comprehensive video production services, including filming. Our team can handle the entire process from concept development to filming and editing, providing you with a complete end-to-end solution." />
+
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Ready to Create <span className="text-gold">Compelling Videos</span>?
-            </h2>
-            <p className="text-black/70 mb-10 text-lg">
-              Contact us today to discuss your video project and discover how our video editing services can help your business communicate effectively.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
-                href="/contact" 
-                className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
-              >
-                Get Started
-              </a>
-              <a 
-                href="/contact" 
-                className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
-              >
-                Schedule a Consultation
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactFooterComponent
+        startingText="Ready to Create"
+        coloredText="Compelling Videos"
+        endingText="?"
+        description="Contact us today to discuss your video project and discover how our video editing services can help your business communicate effectively."
+        button={<Button to="/contact" className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black">Get Started</Button>} 
+      />
+      
     </div>
   )
 }

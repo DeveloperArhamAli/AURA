@@ -7,6 +7,9 @@ import Person3 from "../assets/person3.jpeg"
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen flex-col">
+      <Helmet>
+        <title>About Us - AURA ENTERPRISES</title>
+      </Helmet>
       {/* Hero Section */}
       <section className="relative bg-black py-20">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>

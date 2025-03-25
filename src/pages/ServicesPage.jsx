@@ -1,9 +1,17 @@
 import { CheckCircle, ArrowRight, Globe, Code, BarChart, Megaphone, Star, Layers } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { WorkCard } from "../components/index.js"
+import { Helmet } from 'react-helmet'
 
 export default function ServicesPage() {
   return (
     <div className="flex min-h-screen flex-col">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Services | AURA ENTERPRISES</title>
+        <meta name='keywords' content='digital marketing services, web development company, seo services, graphic design services, website optimization, e-commerce development, content marketing agency, social media management, branding services, professional video editing' />
+        <meta name='description' content='AURA ENTERPRISES offers expert web development, SEO, graphic design, and digital marketing services. Boost your online presence with professional solutions tailored to your business needs.' />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative bg-black py-20">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
@@ -249,49 +257,15 @@ export default function ServicesPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Step 1 */}
-            <div className="relative">
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8 h-full">
-                <div className="absolute -top-5 -left-5 w-10 h-10 rounded-full bg-gold flex items-center justify-center text-black font-bold">1</div>
-                <h3 className="text-xl font-bold text-white mb-4 mt-2">Discovery</h3>
-                <p className="text-white/70">
-                  We start by understanding your business, goals, target audience, and requirements to lay a solid foundation for your project.
-                </p>
-              </div>
-            </div>
+
+            <WorkCard step={1} heading="Discovery" description="We start by understanding your business, goals, target audience, and requirements to lay a solid foundation for your project." />
+
+            <WorkCard step={2} heading="Strategy" description="Based on our findings, we develop a comprehensive strategy and roadmap tailored to your specific needs and objectives." />
             
-            {/* Step 2 */}
-            <div className="relative">
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8 h-full">
-                <div className="absolute -top-5 -left-5 w-10 h-10 rounded-full bg-gold flex items-center justify-center text-black font-bold">2</div>
-                <h3 className="text-xl font-bold text-white mb-4 mt-2">Strategy</h3>
-                <p className="text-white/70">
-                  Based on our findings, we develop a comprehensive strategy and roadmap tailored to your specific needs and objectives.
-                </p>
-              </div>
-            </div>
+            <WorkCard step={3} heading="Implementation" description="Our team executes the strategy, developing and implementing solutions with regular updates and feedback." />
             
-            {/* Step 3 */}
-            <div className="relative">
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8 h-full">
-                <div className="absolute -top-5 -left-5 w-10 h-10 rounded-full bg-gold flex items-center justify-center text-black font-bold">3</div>
-                <h3 className="text-xl font-bold text-white mb-4 mt-2">Implementation</h3>
-                <p className="text-white/70">
-                  Our team of experts executes the strategy, developing and implementing solutions with regular updates and feedback.
-                </p>
-              </div>
-            </div>
-            
-            {/* Step 4 */}
-            <div className="relative">
-              <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8 h-full">
-                <div className="absolute -top-5 -left-5 w-10 h-10 rounded-full bg-gold flex items-center justify-center text-black font-bold">4</div>
-                <h3 className="text-xl font-bold text-white mb-4 mt-2">Optimization</h3>
-                <p className="text-white/70">
-                  We continuously monitor, analyze, and optimize your digital assets to ensure they deliver the best possible results.
-                </p>
-              </div>
-            </div>
+            <WorkCard step={4} heading="Optimization" description="We continuously monitor, analyze, and optimize your digital assets to ensure they deliver the best possible results." />
+
           </div>
         </div>
       </section>

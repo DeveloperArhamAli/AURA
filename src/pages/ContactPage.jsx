@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import ContactForm from "../components/ContactForm"
 
 export default function ContactPage() {
   return (
@@ -52,34 +53,6 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-semibold text-black">Email</h3>
                       <a href="mailto:info@auraenterprices.com" target="_blank"><p className="text-black/70">info@auraenterprices.com</p></a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="rounded-full bg-gold/10 p-3 w-fit">
-                      <MapPin className="h-6 w-6 text-gold" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-black">Address</h3>
-                      <p className="text-black/70">
-                        123 Business Avenue, Suite 500
-                        <br />
-                        New York, NY 10001
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="rounded-full bg-gold/10 p-3 w-fit">
-                      <Clock className="h-6 w-6 text-gold" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-black">Business Hours</h3>
-                      <p className="text-black/70">
-                        Monday - Friday: 9:00 AM - 6:00 PM
-                        <br />
-                        Saturday - Sunday: Closed
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -169,96 +142,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-xl border border-black/10 p-8 text-black">
-              <h2 className="text-2xl font-bold text-black mb-6">Send Us a Message</h2>
-              <form>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-black/70 mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      className="w-full px-4 py-3 rounded-md border border-black/20 focus:outline-none focus:ring-2 focus:ring-gold/50"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-black/70 mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      className="w-full px-4 py-3 rounded-md border border-black/20 focus:outline-none focus:ring-2 focus:ring-gold/50"
-                      placeholder="Doe"
-                    />
-                  </div>
-                </div>
-
-                <div className="mb-6">
-                  <label htmlFor="email" className="block text-sm font-medium text-black/70 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 rounded-md border border-black/20 focus:outline-none focus:ring-2 focus:ring-gold/50"
-                    placeholder="john.doe@example.com"
-                  />
-                </div>
-
-                <div className="mb-6">
-                  <label htmlFor="phone" className="block text-sm font-medium text-black/70 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-3 rounded-md border border-black/20 focus:outline-none focus:ring-2 focus:ring-gold/50"
-                    placeholder="+1 (123) 456-7890"
-                  />
-                </div>
-
-                <div className="mb-6">
-                  <label htmlFor="service" className="block text-sm font-medium text-black/70 mb-2">
-                    Service Interested In
-                  </label>
-                  <select
-                    id="service"
-                    className="w-full px-4 py-3 rounded-md border border-black/20 focus:outline-none focus:ring-2 focus:ring-gold/50"
-                  >
-                    <option value="">Select a service</option>
-                    <option value="web-development">Web Development</option>
-                    <option value="app-development">App Development</option>
-                    <option value="data-analytics">Data Analytics</option>
-                    <option value="digital-marketing">Digital Marketing</option>
-                    <option value="seo-optimization">SEO Optimization</option>
-                    <option value="brand-strategy">Brand Strategy</option>
-                  </select>
-                </div>
-
-                <div className="mb-6">
-                  <label htmlFor="message" className="block text-sm font-medium text-black/70 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows="5"
-                    className="w-full px-4 py-3 rounded-md border border-black/20 focus:outline-none focus:ring-2 focus:ring-gold/50"
-                    placeholder="Tell us about your project or inquiry..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full py-3 px-4 bg-gold hover:bg-gold/90 text-black text-center rounded-md font-medium"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>

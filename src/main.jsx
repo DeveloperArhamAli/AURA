@@ -3,16 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import HomePage from './pages/HomePage.jsx'
-import ServicesPage from './pages/ServicesPage.jsx'
-import ContactPage from './pages/ContactPage.jsx'
-import AboutPage from './pages/AboutPage.jsx'
-import WebDevelopmentPage from './pages/services/WebDevelopmentPage.jsx'
-import VideoEditingPage from './pages/services/VideoEditingPage.jsx'
-import GraphicDesigningPage from './pages/services/GraphicDesigningPage.jsx'
-import AssignmentsPage from './pages/services/AssignmentsPage.jsx'
-import PhotographyPage from './pages/services/PhotographyPage.jsx'
-import SeoPage from "./pages/services/SeoPage.jsx"
+import { HomePage, ServicesPage, ContactPage, AboutPage, WebDevelopmentPage, VideoEditingPage, GraphicDesigningPage, AssignmentsPage, PhotographyPage, SeoPage } from "./pages/index.js"
 
 const router = createBrowserRouter([
   {
