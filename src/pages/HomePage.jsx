@@ -1,28 +1,35 @@
-import { Globe, CheckCircle, Video, FileImage, Camera, BookOpenCheck } from "lucide-react"
-import OfficeImage from "../assets/office.jpg"
-import Person1 from "../assets/person1.jpeg"
-import Person2 from "../assets/peson2.jpeg"
-import Person3 from "../assets/person3.jpeg"
-import { Button, Card, Testimonial } from "../components/index.js"
-import { Helmet } from "react-helmet"
+import { CheckCircle } from "lucide-react"
+import { OfficeImage } from "../assets/images/index.js"
+import {
+  Button,
+  Card,
+  ContactFooterComponent,
+  GoldTextOverlay,
+  SiteDetails,
+  Testimonial
+} from "../components/index.js"
+
+import {
+  allServices,
+  allTestimonials
+} from "../data"
 
 function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Home | AURA ENTERPRISES</title>
-        <meta name='keywords' content='digital marketing services, web development company, seo services, graphic design services, website optimization, e-commerce development, content marketing agency, social media management, branding services, professional video editing' />
-        <meta name='description' content='AURA ENTERPRISES offers expert web development, SEO, graphic design, and digital marketing services. Boost your online presence with professional solutions tailored to your business needs.' />
-      </Helmet>
+
+      <SiteDetails
+        title="Home"
+        keywords="digital marketing services, web development company, seo services, graphic design services, website optimization, e-commerce development, content marketing agency, social media management, branding services, professional video editing"
+        description="AURA ENTERPRISES offers expert web development, SEO, graphic design, and digital marketing services. Boost your online presence with professional solutions tailored to your business needs."
+      />
+
       <main className="flex-1">
-        {/* Hero Section */}
+
         <section className="relative bg-black/75 py-20 md:py-32">
           <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
           <div className="container relative z-10 flex flex-col items-center text-center">
-            <div className="inline-block rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold mb-6">
-              Premium Digital Services
-            </div>
+            <GoldTextOverlay heading="Premium Digital Services" />
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">
               Elevate Your <span className="text-gold">Digital Presence</span>
             </h1>
@@ -37,36 +44,26 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Services Section */}
         <section id="services" className="py-20 px-8 bg-white">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Premium Services</h2>
-              <p className="max-w-[600px] mx-auto text-black/70">
-                We offer a wide range of digital services to help your business grow and succeed in the digital
-                landscape.
-              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">{allServices.heading}</h2>
+              <p className="max-w-[600px] mx-auto text-black/70">{allServices.description}</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-              <Card icon={<Globe className="h-6 w-6 text-gold" />} name="Web Development" description="Building responsive, high-performing websites tailored to your needs." to="/services/web-development" />
-
-              <Card icon={<Video className="h-6 w-6 text-gold" />} name="Video Editing" description="Crafting high-quality, engaging videos with seamless transitions and effects." to="/services/video-editing" />
-
-              <Card icon={<FileImage className="h-6 w-6 text-gold" />} name="Graphic Designing" description="Creating visually stunning designs that enhance brand identity." to="/services/graphic-designing" />
-
-              <Card icon={<Camera className="h-6 w-6 text-gold" />} name="Photography" description="Capturing professional and artistic images for various needs." to="/services/photography" />
-
-              <Card icon={<CheckCircle className="h-6 w-6 text-gold" />} name="SEO Optimization" description="Optimizing websites to rank higher and drive organic traffic." to="/services/seo" />
-
-              <Card icon={<BookOpenCheck className="h-6 w-6 text-gold" />} name="Assignments" description="Providing well-structured, high-quality academic and professional assignments." to="/services/assignments" />
+              {allServices.services.map((service) => (
+                <Card 
+                  key={service.slug}
+                  to={`/services/${service.slug}`}
+                  {...service} />
+              ))}
 
             </div>
           </div>
         </section>
 
-        {/* About Section */}
         <section id="about" className="py-20 px-8 bg-black">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -134,47 +131,34 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
         <section id="testimonials" className="py-20 px-8 bg-white">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">What Our Clients Say</h2>
-              <p className="max-w-[600px] mx-auto text-black/70">
-                Don't just take our word for it. Here's what our clients have to say about our services.
-              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">{allTestimonials.heading}</h2>
+              <p className="max-w-[600px] mx-auto text-black/70">{allTestimonials.description}</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-              <Testimonial stars={5} description="Working with AURA ENTERPRISES has been a game-changer for our business. Their web development team created a stunning website that perfectly represents our brand and has significantly increased our online conversions."name="Sarah Johnson" designation="CEO, TechInnovate" image={Person1} />
-
-              <Testimonial stars={5} description="The digital marketing strategy developed by AURA ENTERPRISES helped us reach our target audience effectively. We've seen a 200% increase in organic traffic and a significant boost in lead generation." name="Michael Chen" designation="Marketing Director, GrowthHub" image={Person2} />
               
-              <Testimonial stars={5} description="AURA ENTERPRISES delivered an exceptional mobile app that exceeded our expectations. Their attention to detail and commitment to quality is impressive. We highly recommend their services." name="Emily Rodriguez" designation="Product Manager, AppSolutions" image={Person3} />
+              {allTestimonials.testimonials.map((testimonial) => (
+                <Testimonial
+                  key={testimonial.name}
+                  {...testimonial} />
+              ))}
 
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section id="contact" className="py-20 bg-black">
-          <div className="container">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Ready to <span className="text-gold">Transform</span> Your Digital Presence?
-              </h2>
-              <p className="text-white/70 mb-10 text-lg">
-                Contact us today to discuss your project and discover how our services can help your business grow in
-                the digital landscape.
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button to="/contact" className="bg-gold hover:bg-gold/90 text-black px-8 py-6 text-lg rounded-sm">Get Started</Button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactFooterComponent
+          startingText="Ready to"
+          coloredText="Transform"
+          endingText="Your Digital Presence?"
+          description="Contact us today to discuss your project and discover how our services can help your business grow in the digital landscape."
+          button={<Button to="/contact" className="bg-gold hover:bg-gold/90 text-black px-8 py-3 text-lg rounded-sm">Get Started</Button>}
+        />
+
       </main>
-
     </div>
   )
 }

@@ -1,31 +1,39 @@
 import Button from "./Button"
 import Card from "./Card"
 import ContactFooterComponent from "./ContactFooterComponent"
-import ContactFrom from "./ContactForm"
+import ContactForm from "./ContactForm"
 import FaqCard from "./FaqCard"
 import Footer from "./Footer"
+import GoldTextOverlay from "./GoldTextOverlay"
+import Header from "./Header"
 import Input from "./Input"
 import Layout from "./Layout"
 import Logo from "./Logo"
 import Navbar from "./Navbar"
-import ServiceCard from "./ServiceCard"
-import Testimonial from "./Testimonial"
+import PricingCard from "./PricingCard"
 import ProjectShowcaseCard from "./ProjectShowcaseCard"
+import ServiceCard from "./ServiceCard"
+import SiteDetails from "./SiteDetails"
+import Testimonial from "./Testimonial"
 import WorkCard from "./WorkCard"
 
 export {
     Button,
     Card,
     ContactFooterComponent,
-    ContactFrom,
+    ContactForm,
     FaqCard,
     Footer,
+    GoldTextOverlay,
+    Header,
     Input,
     Layout,
     Logo,
     Navbar,
-    ServiceCard,
-    Testimonial,
+    PricingCard,
     ProjectShowcaseCard,
-    WorkCard
+    ServiceCard,
+    SiteDetails,
+    Testimonial,
+    WorkCard,
 }

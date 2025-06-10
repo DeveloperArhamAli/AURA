@@ -15,7 +15,7 @@ function ServiceCard({
             <p className="text-white/70">{description}</p>
             <ul className="space-y-2">
                 {features.map((feature) => (
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-2" key={feature}>
                         <CheckCircle className="h-5 w-5 text-gold shrink-0 mt-0.5" />
                         <span className="text-white/70">{feature}</span>
                     </li>
