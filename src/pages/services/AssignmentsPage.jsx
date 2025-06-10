@@ -1,5 +1,6 @@
 import { CheckCircle, FileText, Edit, BookOpen, Users, ArrowRight } from 'lucide-react'
 import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
 
 export default function AssignmentsPage() {
   return (
@@ -26,12 +27,12 @@ export default function AssignmentsPage() {
               Struggling with your assignments? Get plagiarism-free, well-researched, and deadline-driven assignments tailored to your requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="/contact" 
+              <Link 
+                to="/contact" 
                 className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
               >
                 Get Started
-              </a>
+              </Link>
               <a 
                 href="#testimonials" 
                 className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
@@ -121,12 +122,12 @@ export default function AssignmentsPage() {
               </div>
 
               <div className="mt-8">
-                <a 
-                  href="/contact" 
+                <Link 
+                  to="/contact" 
                   className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
                 >
                   Talk to an Expert
-                </a>
+                </Link>
               </div>
             </div>
             
@@ -371,12 +372,12 @@ export default function AssignmentsPage() {
           </div>
 
           <div className="text-center mt-12">
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
             >
               Order Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -645,12 +646,12 @@ export default function AssignmentsPage() {
           </div>
 
           <div className="text-center mt-12">
-            <a 
+            <Link 
               href="/contact" 
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
             >
               Place Your Order
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -666,18 +667,12 @@ export default function AssignmentsPage() {
               Contact us now and achieve academic success with high-quality, custom-written assignments!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
+              <Link 
                 href="/contact" 
                 className="inline-flex h-12 items-center justify-center rounded-md bg-gold hover:bg-gold/90 px-8 py-3 text-lg font-medium text-black"
               >
                 Get Started
-              </a>
-              <a 
-                href="tel:+1234567890" 
-                className="inline-flex h-12 items-center justify-center rounded-md border border-gold text-gold hover:bg-gold/10 px-8 py-3 text-lg font-medium"
-              >
-                Call Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
